@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Page Container -->
+<div class="container mt-4 d-flex flex-column align-items-center">
+    <div class="text-center mb-4">
+        <h1 class="display-4">Welcome to the City Library</h1>
+        <p class="lead">Manage and explore the city's library system with ease.</p>
+    </div>
+
+    <!-- Manage Borrowers Button Section -->
+    <div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
+        <div class="text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Manage Borrowers</h5>
+                    <p class="card-text">Add, view, update, and delete borrowers from the library system.</p>
+                    <a href="@Url.Action("Index", "Borrower")" class="btn btn-primary btn-lg">
+                        <i class="fas fa-users"></i> Manage Borrowers
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="text-center mb-4">
+        <h2 class="display-5">About Us</h2>
+        <p class="lead">City Library is dedicated to providing access to books and resources for everyone in the community. Our system helps manage borrowers, track book status, and organize events efficiently.</p>
+        <p>For more information, visit our <a href="https://learn.microsoft.com/aspnet/core" target="_blank">documentation</a> or <a href="mailto:support@citylibrary.com">contact us</a>.</p>
+    </div>
+</div>
